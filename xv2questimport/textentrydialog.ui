@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TextEntryDialog</class>
+ <widget class="QDialog" name="TextEntryDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>498</width>
+    <height>340</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QDialogButtonBox" name="buttonBox">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>290</y>
+     <width>401</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+   <property name="centerButtons">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>191</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Hover over text to see the dialogue</string>
+   </property>
+  </widget>
+  <widget class="QTreeWidget" name="questTreeWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>40</y>
+     <width>461</width>
+     <height>231</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::ActionsContextMenu</enum>
+   </property>
+   <property name="itemsExpandable">
+    <bool>true</bool>
+   </property>
+   <attribute name="headerVisible">
+    <bool>false</bool>
+   </attribute>
+   <column>
+    <property name="text">
+     <string>New Column</string>
+    </property>
+   </column>
+   <item>
+    <property name="text">
+     <string>Main quests</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Parallel quests</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Expert quests</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Time rift quests</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Teacher quests</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Training quests</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Fu quests</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Legend Patrol quests</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Raid quests</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Frieza siege quests</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Hero Colosseum (main quests)</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Hero Colosseum (misc quests)</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Hero Colosseum (free battle)</string>
+    </property>
+   </item>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>TextEntryDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>TextEntryDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

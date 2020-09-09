@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>uninstall.ico</file>
+        <file>install.ico</file>
+        <file>unknown.dds</file>
+        <file>add.png</file>
+        <file>crafted_acb/CAQD_ADD_VOX.acb</file>
+        <file>crafted_acb/CAQD_ADD_VOX.awb</file>
+        <file>crafted_acb/en/CAQD_ADD_VOX.acb</file>
+        <file>crafted_acb/en/CAQD_ADD_VOX.awb</file>
+    </qresource>
+</RCC>

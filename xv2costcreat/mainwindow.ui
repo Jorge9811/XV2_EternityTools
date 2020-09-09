@@ -1,0 +1,2100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>661</width>
+    <height>660</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>XV2 Costume Creator</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>621</width>
+      <height>561</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="modInfoTab">
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <attribute name="title">
+      <string>Mod info</string>
+     </attribute>
+     <widget class="QLineEdit" name="modNameEdit">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>18</y>
+        <width>315</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="modGuidEdit">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>138</y>
+        <width>215</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>28</x>
+        <y>20</y>
+        <width>51</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Name:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="modAuthorEdit">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>58</y>
+        <width>215</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>22</x>
+        <y>60</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Author:</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="guidButton">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>137</y>
+        <width>91</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Generate new</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="modVersionEdit">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>98</y>
+        <width>61</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>100</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Version:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>31</x>
+        <y>140</y>
+        <width>31</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>GUID:</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="guidCopyButton">
+      <property name="geometry">
+       <rect>
+        <x>405</x>
+        <y>137</y>
+        <width>95</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Copy to clipboard</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="filesTab">
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <attribute name="title">
+      <string>Files</string>
+     </attribute>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>45</x>
+        <y>20</y>
+        <width>51</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>HUM/SYM:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="humEdit">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>18</y>
+        <width>425</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="humButton">
+      <property name="geometry">
+       <rect>
+        <x>535</x>
+        <y>17</y>
+        <width>61</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Change</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>48</x>
+        <y>60</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>HUF/SYF:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="hufEdit">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>58</y>
+        <width>425</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="hufButton">
+      <property name="geometry">
+       <rect>
+        <x>535</x>
+        <y>57</y>
+        <width>61</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Change</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="nmcEdit">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>98</y>
+        <width>425</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>66</x>
+        <y>100</y>
+        <width>41</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>NMC:</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="nmcButton">
+      <property name="geometry">
+       <rect>
+        <x>535</x>
+        <y>97</y>
+        <width>61</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Change</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="friButton">
+      <property name="geometry">
+       <rect>
+        <x>535</x>
+        <y>137</y>
+        <width>61</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Change</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>69</x>
+        <y>140</y>
+        <width>41</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>FRI:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="friEdit">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>138</y>
+        <width>425</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>65</x>
+        <y>180</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>MAM:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="mamEdit">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>178</y>
+        <width>425</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="mamButton">
+      <property name="geometry">
+       <rect>
+        <x>535</x>
+        <y>177</y>
+        <width>61</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Change</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="mafEdit">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>218</y>
+        <width>425</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="mafButton">
+      <property name="geometry">
+       <rect>
+        <x>535</x>
+        <y>217</y>
+        <width>61</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Change</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>65</x>
+        <y>220</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>MAF:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="addDataEdit">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>258</y>
+        <width>425</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>7</x>
+        <y>260</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Additional data*:</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="addEditButton">
+      <property name="geometry">
+       <rect>
+        <x>535</x>
+        <y>257</y>
+        <width>61</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Change</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>330</y>
+        <width>381</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;*This directory must be used with care and only when needed!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>300</y>
+        <width>171</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;All directories are optional.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="humTab">
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <attribute name="title">
+      <string>HUM/SYM</string>
+     </attribute>
+     <widget class="QPushButton" name="humAddButton">
+      <property name="geometry">
+       <rect>
+        <x>262</x>
+        <y>20</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Add</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="humComboBox">
+      <property name="geometry">
+       <rect>
+        <x>132</x>
+        <y>20</y>
+        <width>115</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="humRemoveButton">
+      <property name="geometry">
+       <rect>
+        <x>342</x>
+        <y>20</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Remove</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="humEnableCheck">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>23</y>
+        <width>101</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Enable HUM/SYM</string>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="humCopyButton">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>20</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Copy</string>
+      </property>
+      <property name="popupMode">
+       <enum>QToolButton::InstantPopup</enum>
+      </property>
+      <property name="toolButtonStyle">
+       <enum>Qt::ToolButtonTextOnly</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>70</y>
+        <width>111</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>BCS Partset:</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="humBcsEdit">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>100</y>
+        <width>568</width>
+        <height>411</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="hufTab">
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <attribute name="title">
+      <string>HUF/SYF</string>
+     </attribute>
+     <widget class="QCheckBox" name="hufEnableCheck">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>23</y>
+        <width>101</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Enable HUF/SYF</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="hufRemoveButton">
+      <property name="geometry">
+       <rect>
+        <x>342</x>
+        <y>20</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Remove</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>70</y>
+        <width>111</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>BCS Partset:</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="hufAddButton">
+      <property name="geometry">
+       <rect>
+        <x>262</x>
+        <y>20</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Add</string>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="hufCopyButton">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>20</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Copy</string>
+      </property>
+      <property name="popupMode">
+       <enum>QToolButton::InstantPopup</enum>
+      </property>
+      <property name="toolButtonStyle">
+       <enum>Qt::ToolButtonTextOnly</enum>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="hufComboBox">
+      <property name="geometry">
+       <rect>
+        <x>132</x>
+        <y>20</y>
+        <width>115</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="hufBcsEdit">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>100</y>
+        <width>568</width>
+        <height>411</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="nmcTab">
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <attribute name="title">
+      <string>NMC</string>
+     </attribute>
+     <widget class="QCheckBox" name="nmcEnableCheck">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>23</y>
+        <width>101</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Enable NMC</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="nmcComboBox">
+      <property name="geometry">
+       <rect>
+        <x>132</x>
+        <y>20</y>
+        <width>115</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="nmcRemoveButton">
+      <property name="geometry">
+       <rect>
+        <x>342</x>
+        <y>20</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Remove</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="nmcAddButton">
+      <property name="geometry">
+       <rect>
+        <x>262</x>
+        <y>20</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Add</string>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="nmcCopyButton">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>20</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Copy</string>
+      </property>
+      <property name="popupMode">
+       <enum>QToolButton::InstantPopup</enum>
+      </property>
+      <property name="toolButtonStyle">
+       <enum>Qt::ToolButtonTextOnly</enum>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="nmcBcsEdit">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>100</y>
+        <width>568</width>
+        <height>411</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_16">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>70</y>
+        <width>111</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>BCS Partset:</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="friTab">
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <attribute name="title">
+      <string>FRI</string>
+     </attribute>
+     <widget class="QPushButton" name="friRemoveButton">
+      <property name="geometry">
+       <rect>
+        <x>342</x>
+        <y>20</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Remove</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="friBcsEdit">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>100</y>
+        <width>568</width>
+        <height>411</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="friAddButton">
+      <property name="geometry">
+       <rect>
+        <x>262</x>
+        <y>20</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Add</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="friEnableCheck">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>23</y>
+        <width>101</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Enable FRI</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="friComboBox">
+      <property name="geometry">
+       <rect>
+        <x>132</x>
+        <y>20</y>
+        <width>115</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="friCopyButton">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>20</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Copy</string>
+      </property>
+      <property name="popupMode">
+       <enum>QToolButton::InstantPopup</enum>
+      </property>
+      <property name="toolButtonStyle">
+       <enum>Qt::ToolButtonTextOnly</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>70</y>
+        <width>111</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>BCS Partset:</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="mamTab">
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <attribute name="title">
+      <string>MAM</string>
+     </attribute>
+     <widget class="QPushButton" name="mamRemoveButton">
+      <property name="geometry">
+       <rect>
+        <x>342</x>
+        <y>20</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Remove</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_18">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>70</y>
+        <width>111</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>BCS Partset:</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="mamBcsEdit">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>100</y>
+        <width>568</width>
+        <height>411</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="mamCopyButton">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>20</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Copy</string>
+      </property>
+      <property name="popupMode">
+       <enum>QToolButton::InstantPopup</enum>
+      </property>
+      <property name="toolButtonStyle">
+       <enum>Qt::ToolButtonTextOnly</enum>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="mamComboBox">
+      <property name="geometry">
+       <rect>
+        <x>132</x>
+        <y>20</y>
+        <width>115</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="mamEnableCheck">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>23</y>
+        <width>101</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Enable MAM</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="mamAddButton">
+      <property name="geometry">
+       <rect>
+        <x>262</x>
+        <y>20</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Add</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="mafTab">
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <attribute name="title">
+      <string>MAF</string>
+     </attribute>
+     <widget class="QPushButton" name="mafRemoveButton">
+      <property name="geometry">
+       <rect>
+        <x>342</x>
+        <y>20</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Remove</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_19">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>70</y>
+        <width>111</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>BCS Partset:</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="mafAddButton">
+      <property name="geometry">
+       <rect>
+        <x>262</x>
+        <y>20</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Add</string>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="mafCopyButton">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>20</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Copy</string>
+      </property>
+      <property name="popupMode">
+       <enum>QToolButton::InstantPopup</enum>
+      </property>
+      <property name="toolButtonStyle">
+       <enum>Qt::ToolButtonTextOnly</enum>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="mafComboBox">
+      <property name="geometry">
+       <rect>
+        <x>132</x>
+        <y>20</y>
+        <width>115</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="mafEnableCheck">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>23</y>
+        <width>101</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Enable MAF</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="mafBcsEdit">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>100</y>
+        <width>568</width>
+        <height>411</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="idbTab">
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <attribute name="title">
+      <string>IDB</string>
+     </attribute>
+     <widget class="QToolButton" name="idbCopyButton">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>20</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Copy</string>
+      </property>
+      <property name="popupMode">
+       <enum>QToolButton::InstantPopup</enum>
+      </property>
+      <property name="toolButtonStyle">
+       <enum>Qt::ToolButtonTextOnly</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="idbRemoveButton">
+      <property name="geometry">
+       <rect>
+        <x>342</x>
+        <y>20</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Remove</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="idbComboBox">
+      <property name="geometry">
+       <rect>
+        <x>132</x>
+        <y>20</y>
+        <width>115</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="idbEnableCheck">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>23</y>
+        <width>101</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Enable IDB</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="idbAddButton">
+      <property name="geometry">
+       <rect>
+        <x>262</x>
+        <y>20</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Add</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_20">
+      <property name="geometry">
+       <rect>
+        <x>37</x>
+        <y>110</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Name:</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="idbNameLangComboBox">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>107</y>
+        <width>91</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>English</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Spanish (es)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Spanish (ca)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>French</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>German</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Italian</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Portuguese</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Polish</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Russian</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Chinese (tw)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Chinese (zh)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Korean</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="label_21">
+      <property name="geometry">
+       <rect>
+        <x>18</x>
+        <y>70</y>
+        <width>51</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Item type:</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="idbTypeComboBox">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>67</y>
+        <width>121</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Top</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Bottom</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Gloves</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Shoes</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Accessory</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QToolButton" name="idbDescCopyButton">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>150</y>
+        <width>95</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Copy</string>
+      </property>
+      <property name="popupMode">
+       <enum>QToolButton::InstantPopup</enum>
+      </property>
+      <property name="toolButtonStyle">
+       <enum>Qt::ToolButtonTextOnly</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_32">
+      <property name="geometry">
+       <rect>
+        <x>34</x>
+        <y>150</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Desc.:</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="idbDescEdit">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>150</y>
+        <width>315</width>
+        <height>91</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="idbNameEdit">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>108</y>
+        <width>315</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="idbDescLangComboBox">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>150</y>
+        <width>91</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>English</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Spanish (es)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Spanish (ca)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>French</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>German</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Italian</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Portuguese</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Polish</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Russian</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Chinese (tw)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Chinese (zh)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Korean</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QToolButton" name="idbNameCopyButton">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>107</y>
+        <width>95</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Copy</string>
+      </property>
+      <property name="popupMode">
+       <enum>QToolButton::InstantPopup</enum>
+      </property>
+      <property name="toolButtonStyle">
+       <enum>Qt::ToolButtonTextOnly</enum>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="idbMafCheck">
+      <property name="geometry">
+       <rect>
+        <x>493</x>
+        <y>260</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>MAF</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="idbNmcCheck">
+      <property name="geometry">
+       <rect>
+        <x>313</x>
+        <y>260</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>NMC</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="idbSellEdit">
+      <property name="geometry">
+       <rect>
+        <x>303</x>
+        <y>378</y>
+        <width>75</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_43">
+      <property name="geometry">
+       <rect>
+        <x>19</x>
+        <y>500</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Effect 1:</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="idbEff2Button">
+      <property name="geometry">
+       <rect>
+        <x>303</x>
+        <y>495</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Edit</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_37">
+      <property name="geometry">
+       <rect>
+        <x>272</x>
+        <y>380</y>
+        <width>31</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Sell:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_38">
+      <property name="geometry">
+       <rect>
+        <x>43</x>
+        <y>420</y>
+        <width>31</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>TP:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_34">
+      <property name="geometry">
+       <rect>
+        <x>31</x>
+        <y>340</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>U_0C:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_40">
+      <property name="geometry">
+       <rect>
+        <x>31</x>
+        <y>460</y>
+        <width>41</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>U_24:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_22">
+      <property name="geometry">
+       <rect>
+        <x>13</x>
+        <y>260</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Race lock:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="idbU24Edit">
+      <property name="geometry">
+       <rect>
+        <x>73</x>
+        <y>458</y>
+        <width>75</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="idbU0CEdit">
+      <property name="geometry">
+       <rect>
+        <x>73</x>
+        <y>338</y>
+        <width>75</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_41">
+      <property name="geometry">
+       <rect>
+        <x>263</x>
+        <y>460</y>
+        <width>41</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>U_28:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="idbU0EEdit">
+      <property name="geometry">
+       <rect>
+        <x>303</x>
+        <y>338</y>
+        <width>75</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="idbHumCheck">
+      <property name="geometry">
+       <rect>
+        <x>73</x>
+        <y>260</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>HUM</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_36">
+      <property name="geometry">
+       <rect>
+        <x>38</x>
+        <y>380</y>
+        <width>41</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Buy:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_45">
+      <property name="geometry">
+       <rect>
+        <x>471</x>
+        <y>500</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Effect 3:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="idbStarsEdit">
+      <property name="geometry">
+       <rect>
+        <x>73</x>
+        <y>298</y>
+        <width>75</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_33">
+      <property name="geometry">
+       <rect>
+        <x>263</x>
+        <y>300</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>U_0A:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_42">
+      <property name="geometry">
+       <rect>
+        <x>483</x>
+        <y>460</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>U_2C:</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="idbFriCheck">
+      <property name="geometry">
+       <rect>
+        <x>373</x>
+        <y>260</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>FRI</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="idbSymCheck">
+      <property name="geometry">
+       <rect>
+        <x>193</x>
+        <y>260</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>SYM</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_39">
+      <property name="geometry">
+       <rect>
+        <x>253</x>
+        <y>420</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Partset:</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="idbEff3Button">
+      <property name="geometry">
+       <rect>
+        <x>523</x>
+        <y>495</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Edit</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="idbU28Edit">
+      <property name="geometry">
+       <rect>
+        <x>303</x>
+        <y>458</y>
+        <width>75</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="idbMamCheck">
+      <property name="geometry">
+       <rect>
+        <x>433</x>
+        <y>260</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>MAM</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_23">
+      <property name="geometry">
+       <rect>
+        <x>32</x>
+        <y>300</y>
+        <width>31</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Stars:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="idbBuyEdit">
+      <property name="geometry">
+       <rect>
+        <x>73</x>
+        <y>378</y>
+        <width>75</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="idbU2CEdit">
+      <property name="geometry">
+       <rect>
+        <x>523</x>
+        <y>458</y>
+        <width>75</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_35">
+      <property name="geometry">
+       <rect>
+        <x>263</x>
+        <y>340</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>U_0E:</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="idbEff1Button">
+      <property name="geometry">
+       <rect>
+        <x>73</x>
+        <y>495</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Edit</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="idbTpEdit">
+      <property name="geometry">
+       <rect>
+        <x>73</x>
+        <y>418</y>
+        <width>75</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="idbU0AEdit">
+      <property name="geometry">
+       <rect>
+        <x>303</x>
+        <y>298</y>
+        <width>75</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="idbSyfCheck">
+      <property name="geometry">
+       <rect>
+        <x>253</x>
+        <y>260</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>SYF</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="idbHufCheck">
+      <property name="geometry">
+       <rect>
+        <x>133</x>
+        <y>260</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>HUF</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_44">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>500</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Effect 2:</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="idbFlag4Check">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>420</y>
+        <width>131</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Colorable flag</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="idbPartSetComboBox">
+      <property name="geometry">
+       <rect>
+        <x>303</x>
+        <y>418</y>
+        <width>75</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>661</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionOpen"/>
+    <addaction name="actionSave"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionOpen"/>
+   <addaction name="actionSave"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save as...</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionFromGameHum">
+   <property name="text">
+    <string>From game (HUM.bcs)</string>
+   </property>
+   <property name="toolTip">
+    <string>From game (HUM.bcs)</string>
+   </property>
+  </action>
+  <action name="actionFromExternalHum">
+   <property name="text">
+    <string>From external bcs</string>
+   </property>
+  </action>
+  <action name="actionFromGameHuf">
+   <property name="text">
+    <string>From game (HUF.bcs)</string>
+   </property>
+   <property name="toolTip">
+    <string>From game (HUF.bcs)</string>
+   </property>
+  </action>
+  <action name="actionFromExternalHuf">
+   <property name="text">
+    <string>From external bcs</string>
+   </property>
+  </action>
+  <action name="actionFromGameNmc">
+   <property name="text">
+    <string>From game (NMC.bcs)</string>
+   </property>
+   <property name="toolTip">
+    <string>From game (NMC.bcs)</string>
+   </property>
+  </action>
+  <action name="actionFromExternalNmc">
+   <property name="text">
+    <string>From external bcs</string>
+   </property>
+  </action>
+  <action name="actionFromGameFri">
+   <property name="text">
+    <string>From game (FRI.bcs)</string>
+   </property>
+   <property name="toolTip">
+    <string>From game (FRI.bcs)</string>
+   </property>
+  </action>
+  <action name="actionFromExternalFri">
+   <property name="text">
+    <string>From external bcs</string>
+   </property>
+  </action>
+  <action name="actionFromGameMam">
+   <property name="text">
+    <string>From game (MAM.bcs)</string>
+   </property>
+   <property name="toolTip">
+    <string>From game (MAM.bcs)</string>
+   </property>
+  </action>
+  <action name="actionFromExternalMam">
+   <property name="text">
+    <string>From external bcs</string>
+   </property>
+  </action>
+  <action name="actionFromGameMaf">
+   <property name="text">
+    <string>From game (MAF.bcs)</string>
+   </property>
+   <property name="toolTip">
+    <string>From game (MAF.bcs)</string>
+   </property>
+  </action>
+  <action name="actionFromExternalMaf">
+   <property name="text">
+    <string>From external bcs</string>
+   </property>
+  </action>
+  <action name="actionFromGameCostumeTop">
+   <property name="text">
+    <string>From game (costume_top_item)</string>
+   </property>
+  </action>
+  <action name="actionFromGameCostumeBottom">
+   <property name="text">
+    <string>From game (costume_bottom_item)</string>
+   </property>
+   <property name="toolTip">
+    <string>From game (costume_bottom_item)</string>
+   </property>
+  </action>
+  <action name="actionFromGameCostumeGloves">
+   <property name="text">
+    <string>From game (costume_top_gloves)</string>
+   </property>
+   <property name="toolTip">
+    <string>From game (costume_top_gloves)</string>
+   </property>
+  </action>
+  <action name="actionFromGameCostumeShoes">
+   <property name="text">
+    <string>From game (costume_shoes_item)</string>
+   </property>
+   <property name="toolTip">
+    <string>From game (costume_shoes_item)</string>
+   </property>
+  </action>
+  <action name="actionFromGameAccessory">
+   <property name="text">
+    <string>From game (accessory_item)</string>
+   </property>
+   <property name="toolTip">
+    <string>From game (accessory_item)</string>
+   </property>
+  </action>
+  <action name="actionFromGameCostumeTopName">
+   <property name="text">
+    <string>From game (costume_top_item)</string>
+   </property>
+  </action>
+  <action name="actionFromGameCostumeBottomName">
+   <property name="text">
+    <string>From game (costume_bottom_item)</string>
+   </property>
+   <property name="toolTip">
+    <string>From game (costume_bottom_item)</string>
+   </property>
+  </action>
+  <action name="actionFromGameCostumeGlovesName">
+   <property name="text">
+    <string>From game (costume_top_gloves)</string>
+   </property>
+   <property name="toolTip">
+    <string>From game (costume_top_gloves)</string>
+   </property>
+  </action>
+  <action name="actionFromGameCostumeShoesName">
+   <property name="text">
+    <string>From game (costume_shoes_item)</string>
+   </property>
+   <property name="toolTip">
+    <string>From game (costume_shoes_item)</string>
+   </property>
+  </action>
+  <action name="actionFromGameAccessoryName">
+   <property name="text">
+    <string>From game (accessory_item)</string>
+   </property>
+   <property name="toolTip">
+    <string>From game (accessory_item)</string>
+   </property>
+  </action>
+  <action name="actionFromGameCostumeTopDesc">
+   <property name="text">
+    <string>From game (costume_top_item)</string>
+   </property>
+  </action>
+  <action name="actionFromGameCostumeBottomDesc">
+   <property name="text">
+    <string>From game (costume_bottom_item)</string>
+   </property>
+   <property name="toolTip">
+    <string>From game (costume_bottom_item)</string>
+   </property>
+  </action>
+  <action name="actionFromGameCostumeGlovesDesc">
+   <property name="text">
+    <string>From game (costume_top_gloves)</string>
+   </property>
+   <property name="toolTip">
+    <string>From game (costume_top_gloves)</string>
+   </property>
+  </action>
+  <action name="actionFromGameCostumeShoesDesc">
+   <property name="text">
+    <string>From game (costume_shoes_item)</string>
+   </property>
+   <property name="toolTip">
+    <string>From game (costume_shoes_item)</string>
+   </property>
+  </action>
+  <action name="actionFromGameAccessoryDesc">
+   <property name="text">
+    <string>From game (accessory_item)</string>
+   </property>
+   <property name="toolTip">
+    <string>From game (accessory_item)</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

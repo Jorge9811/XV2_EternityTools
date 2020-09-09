@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SlotEditDialog</class>
+ <widget class="QDialog" name="SlotEditDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>342</width>
+    <height>362</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QDialogButtonBox" name="buttonBox">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>302</y>
+     <width>251</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+   <property name="centerButtons">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>234</x>
+     <y>20</y>
+     <width>91</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Copy from game</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>55</x>
+     <y>70</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Code:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>100</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Costume index:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="costumeEdit">
+   <property name="geometry">
+    <rect>
+     <x>95</x>
+     <y>98</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="codeEdit">
+   <property name="geometry">
+    <rect>
+     <x>95</x>
+     <y>68</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>130</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Model preset:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="presetEdit">
+   <property name="geometry">
+    <rect>
+     <x>95</x>
+     <y>128</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="gk2Check">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>190</y>
+     <width>70</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Flag GK2</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>23</x>
+     <y>160</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Unlock index:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="unlockEdit">
+   <property name="geometry">
+    <rect>
+     <x>95</x>
+     <y>158</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>24</x>
+     <y>220</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Voices id list:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="voicesEdit">
+   <property name="geometry">
+    <rect>
+     <x>95</x>
+     <y>218</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>62</x>
+     <y>250</y>
+     <width>31</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>DLC:</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="dlcComboBox">
+   <property name="geometry">
+    <rect>
+     <x>95</x>
+     <y>250</y>
+     <width>113</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Dlc_Def</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Dlc_Gkb</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Dlc_1</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Dlc_2</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Dlc_3</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Dlc_4</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Dlc_5</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Dlc_6</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Dlc_7</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Dlc_8</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Dlc_9</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Dlc_10</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Ver_Day1</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Ver_TU4</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>UD7</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>PRB</string>
+    </property>
+   </item>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>SlotEditDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>290</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
